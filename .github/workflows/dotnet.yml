@@ -18,14 +18,17 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'  # Ensure this matches your project's SDK
+        dotnet-version: '8.0.x'
 
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: CyberSecurityChatbotPOE
 
     - name: Build
       run: dotnet build --no-restore --configuration Release
+      working-directory: CyberSecurityChatbotPOE
 
     - name: Run Tests
       run: dotnet test --no-build --verbosity normal
-      continue-on-error: true  # Optional if you have no tests yet
+      working-directory: CyberSecurityChatbotPOE
+      continue-on-error: true
