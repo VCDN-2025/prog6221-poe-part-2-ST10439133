@@ -1,4 +1,4 @@
-/* ReadMe 
+ 
   # Cybersecurity Awareness Chatbot 
 
 ## What’s This All About?
@@ -53,6 +53,4 @@ Here’s what makes the chatbot special:
 3. Build the project to restore dependencies.
 4. Hit F5 to run it — or use this in the terminal:
 
-```bash
-dotnet run
-*/
+
